@@ -22,3 +22,5 @@ Si el usuario teclea el número 3, entra en la operación de **MULTIPLICACIÓN**
 Si el usuario teclea el número 4, entra en la operación de **DIVISIÓN**, a continuación le pedirá al usuario que escriba el primer y el segundo número, realizará dicha operación y luego confirmará el resultado imprimiéndolo en la consola para que el usuario pueda verlo. Por último, finaliza el programa, para empezar de nuevo debe volver a ejecutar.
 
 En éste caso se agrega una corrección para que salga el siguiente mensaje **"Dividir entre cero es infinito, prueba con otro número"** si el usuario escribe el número cero para dar valor al segundo número. Para que salga dicho mensaje se empleó el método isInfinite(), en Float Class es un método incorporado en Java que devuelve verdadero si la variable respuesta es infinitamente grande en magnitud, falso de lo contrario.
+
+[JavaDoc](https://github.com/acasella03/libreriaCalculadora.git)
