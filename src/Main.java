@@ -15,8 +15,9 @@ public class Main {
         } else {
             if (opcion >= 1 && opcion <= 4) {
                 resultado = Calculadora.calculadora(numero1, numero2, opcion);
-                if (Float.isInfinite(resultado)) {
-                    EntradaSalida.salida("Dividir entre cero es infinito, prueba con otro número", EntradaSalida.SALIDA_CONSOLA);
+                if (Float.isInfinite(resultado) || Float.isNaN(resultado)) {
+                    EntradaSalida.salida("Dividir entre cero es infinito, prueba con otros números", EntradaSalida.SALIDA_CONSOLA);
+                    EntradaSalida.salida("Cero entre cero no es un resultado válido, prueba con otros números", EntradaSalida.SALIDA_CONSOLA);
                 } else {
                     EntradaSalida.salida("El resultado de la opción seleccionada es: " + resultado, EntradaSalida.SALIDA_CONSOLA);
                 }
