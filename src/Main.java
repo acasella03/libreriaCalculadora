@@ -1,4 +1,4 @@
-import com.angi.Io.EntradaSalida;
+import com.angi.io.EntradaSalida;
 import com.angi.calculadora.Calculadora;
 
 public class Main {
