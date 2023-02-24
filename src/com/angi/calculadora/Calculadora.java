@@ -1,5 +1,8 @@
 package com.angi.calculadora;
 
+import com.sun.jdi.IntegerValue;
+import com.sun.jdi.Value;
+
 /**
  * Librería Calculadora Básica
  *
@@ -25,6 +28,11 @@ public class Calculadora {
      * opción para calcular una división
      */
     public static final int DIVISION = 4;
+
+    /**
+     * opción para calcular una raíz
+     */
+    private static final int RAIZ = 5;
     /**
      * guarda el resultado de la operación
      */
@@ -65,6 +73,13 @@ public class Calculadora {
             case DIVISION:
                 try {
                     resultado = num1 / num2;
+                } catch (Exception e) {
+                    System.out.println("Error");
+                }
+                break;
+            case RAIZ:
+                try {
+                    resultado = (float)(Math.pow(num1, (double) 1.0 / num2));
                 } catch (Exception e) {
                     System.out.println("Error");
                 }
